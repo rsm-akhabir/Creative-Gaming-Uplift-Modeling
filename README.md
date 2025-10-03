@@ -1,8 +1,8 @@
 # Creative Gaming: Uplift Modeling for "Space Pirates" Campaign
-#### Overview:
+### Overview:
 Zalon’s gaming campaign needed an optimized customer targeting strategy. Traditional propensity-to-buy models were inefficient because they also targeted customers who would have purchased regardless of ads, or worse, discouraged others from buying. The challenge was to identify the persuadable customers most likely to be influenced by advertisements while avoiding wasted ad spend and customer irritation.
 
-#### Action / Tasks:
+### Action / Tasks:
 
 Segmented customers into treatment (ads shown) and control (no ads) groups of 30,000 each.
 
@@ -14,7 +14,7 @@ Conducted comparative analysis of uplift vs. propensity models using uplift plot
 
 Determined optimal targeting thresholds to maximize incremental profit and reduce negative impact.
 
-#### Results:
+### Results:
 
 Uplift models consistently outperformed propensity-to-buy models, identifying customers who truly needed ad persuasion.
 
@@ -24,10 +24,10 @@ Optimal targeting reduced the customer pool (e.g., targeting 25–40% instead of
 
 The uplift model avoided over-targeting and “Do-Not-Disturb” customers, ensuring higher profit, lower costs, and better customer experience.
 
-#### Conclusion:
+### Conclusion:
 Uplift modeling is a superior strategy for ad targeting in gaming campaigns, yielding higher incremental revenue, reducing wasted ad spend, and focusing on the customers most likely to be influenced by marketing efforts.
 
-#### Repository Contents
+### Repository Contents:
 
 'cg-uplift.ipynb' — Jupyter notebook with full uplift modeling pipeline.
 
@@ -36,7 +36,7 @@ Uplift modeling is a superior strategy for ad targeting in gaming campaigns, yie
 'creative-gaming.pdf' — Case study with methodology and findings.
 
 
-## Tools & Technologies
+### Tools & Technologies:
 
 Programming Language: Python
 
