@@ -1,58 +1,47 @@
 # Creative Gaming: Uplift Modeling for "Space Pirates" Campaign
-## Overview
+#### Overview:
+Zalon’s gaming campaign needed an optimized customer targeting strategy. Traditional propensity-to-buy models were inefficient because they also targeted customers who would have purchased regardless of ads, or worse, discouraged others from buying. The challenge was to identify the persuadable customers most likely to be influenced by advertisements while avoiding wasted ad spend and customer irritation.
 
-This project focuses on optimizing targeting strategies for the Zalon campaign in Space Pirates, a game by Creative Gaming. Traditional propensity-to-buy models were inefficient, often wasting ads on customers who would have purchased anyway or discouraging customers with overexposure. By applying Uplift Modeling, we identified the customers most likely to be influenced by ads, leading to more efficient marketing spend and improved campaign adoption.
+#### Action / Tasks:
 
-## Objective
+Segmented customers into treatment (ads shown) and control (no ads) groups of 30,000 each.
 
-Analyze 60,000 customers split into control (no ads) and treatment (ads shown) groups.
+Applied uplift modeling (vs. propensity-to-buy modeling) to measure the causal impact of ads.
 
-Identify the persuadable segment—customers who are most responsive to ads.
+Built and tested multiple machine learning models (Logistic Regression, Neural Networks, Random Forest, and XGBoost).
 
-Compare Uplift vs. Propensity-to-Buy Models to determine the superior targeting approach.
+Conducted comparative analysis of uplift vs. propensity models using uplift plots, incremental uplift plots, and profit values.
 
-Maximize incremental profit and minimize wasted ad spend.
+Determined optimal targeting thresholds to maximize incremental profit and reduce negative impact.
 
-## Approach
+#### Results:
 
-Segmented customer base into control and treatment groups (30K each).
+Uplift models consistently outperformed propensity-to-buy models, identifying customers who truly needed ad persuasion.
 
-Applied Uplift Modeling across multiple algorithms:
+Neural Network, Random Forest, and XGBoost uplift models showed significant incremental profit gains (e.g., $55K+ profit improvement compared to propensity models).
 
-Logistic Regression
+Optimal targeting reduced the customer pool (e.g., targeting 25–40% instead of 50%) while maximizing efficiency and ROI.
 
-Neural Networks
+The uplift model avoided over-targeting and “Do-Not-Disturb” customers, ensuring higher profit, lower costs, and better customer experience.
 
-Random Forest
+#### Conclusion:
+Uplift modeling is a superior strategy for ad targeting in gaming campaigns, yielding higher incremental revenue, reducing wasted ad spend, and focusing on the customers most likely to be influenced by marketing efforts.
 
-XGBoost
+#### Repository Contents
 
-Evaluated performance using Uplift Plots, Incremental Uplift Plots, and Profit Analysis.
+'cg-uplift.ipynb' — Jupyter notebook with full uplift modeling pipeline.
 
-Determined optimal targeting thresholds to avoid “Do-Not-Disturb” customers and maximize ROI.
+'data/' — Datasets used for analysis (control & treatment groups).
 
-## Results
+'creative-gaming.pdf' — Case study with methodology and findings.
 
-Uplift models consistently outperformed propensity models by focusing only on persuadable customers.
-
-Achieved significant incremental profit gains (e.g., $55K+ improvements across Neural Network, Random Forest, and XGBoost).
-
-Reduced targeting pool (25–40% of customers vs. 50%) while maximizing efficiency and ROI.
-
-Prevented over-targeting, ensuring smarter ad spend and improved customer experience.
-
-## Repository Contents
-
-cg-uplift.ipynb — Jupyter notebook with full uplift modeling pipeline.
-
-data/ — Datasets used for analysis (control & treatment groups).
-
-creative-gaming.pdf — Case study with methodology and findings.
 
 ## Tools & Technologies
 
-Python (Pandas, NumPy) for data manipulation
+Programming Language: Python
 
-Neural Netowrk, Random Forest and XGBoost for machine learning models
+Libraries: scikit-learn, XGBoost, TensorFlow/Keras, pandas, numpy, matplotlib
 
-Matplotlib for data visualization
+Models: Logistic Regression, Neural Networks, Random Forest, XGBoost
+
+Evaluation Metrics: Uplift plots, Incremental uplift plots, Profit analysis
